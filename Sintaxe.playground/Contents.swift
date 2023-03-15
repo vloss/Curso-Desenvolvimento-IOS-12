@@ -24,3 +24,8 @@ animais["cachorro"] = "Melhor amigo do Homem"
 print(animais["urso"]) // Optional pq não sabe se realmente existe
 print(animais["urso"]!) // ! dá a certeza que realmente existe
 
+// Dicionario Meses do Ano
+var meses = [Int: String]()
+meses[1] = "Janeiro"
+meses[2] = "Fevereiro"
+print(meses[2]!)
