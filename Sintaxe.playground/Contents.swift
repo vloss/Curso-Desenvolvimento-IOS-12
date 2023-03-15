@@ -18,4 +18,9 @@ print(lista)
 
 
 // Dicionarios
+var animais = [String: String]()
+animais["urso"] = "Animal Branco que hiberna"
+animais["cachorro"] = "Melhor amigo do Homem"
+print(animais["urso"]) // Optional pq não sabe se realmente existe
+print(animais["urso"]!) // ! dá a certeza que realmente existe
 
