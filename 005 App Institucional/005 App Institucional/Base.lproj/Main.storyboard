@@ -16,32 +16,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="GyB-EP-w1d">
-                                <rect key="frame" x="60" y="147" width="270" height="96"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="g5E-i9-FUY">
-                                <rect key="frame" x="50" y="313" width="290" height="272"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="I3W-zB-4d2">
+                                <rect key="frame" x="56" y="223" width="278" height="398"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="sEQ-mf-jAE">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="121"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XNJ-ea-34I">
+                                        <rect key="frame" x="0.0" y="0.0" width="278" height="96"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" image="menu_cliente" translatesAutoresizingMaskIntoConstraints="NO" id="cyi-UI-jfE">
-                                                <rect key="frame" x="0.0" y="0.0" width="142" height="121"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="menu_contato" translatesAutoresizingMaskIntoConstraints="NO" id="dh1-0q-PZv">
-                                                <rect key="frame" x="175" y="0.0" width="115" height="121"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="GyB-EP-w1d">
+                                                <rect key="frame" x="0.0" y="0.0" width="278" height="96"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Xak-vo-ckp">
-                                        <rect key="frame" x="0.0" y="151" width="290" height="121"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="J58-cg-et5">
+                                        <rect key="frame" x="0.0" y="120" width="278" height="278"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" image="menu_empresa" translatesAutoresizingMaskIntoConstraints="NO" id="zst-vY-6PT">
-                                                <rect key="frame" x="0.0" y="0.0" width="139" height="121"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="menu_servico" translatesAutoresizingMaskIntoConstraints="NO" id="W6i-pw-uuJ">
-                                                <rect key="frame" x="175" y="0.0" width="115" height="121"/>
-                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYP-cY-p3E">
+                                                <rect key="frame" x="0.0" y="0.0" width="278" height="135"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAy-93-X4z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="139" height="135"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="menu_cliente"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZm-JY-veD">
+                                                        <rect key="frame" x="139" y="0.0" width="139" height="135"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="menu_contato"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwo-oy-nBo">
+                                                <rect key="frame" x="0.0" y="143" width="278" height="135"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sb-kX-TUb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="139" height="135"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="menu_empresa"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyt-Lq-OZI">
+                                                        <rect key="frame" x="139" y="0.0" width="139" height="135"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="menu_servico"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -50,12 +68,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GyB-EP-w1d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="1Eg-3M-xco"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GyB-EP-w1d" secondAttribute="trailing" constant="60" id="QYc-ev-l6m"/>
-                            <constraint firstItem="GyB-EP-w1d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="arq-Zv-fhs"/>
-                            <constraint firstItem="g5E-i9-FUY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="baQ-71-PnB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g5E-i9-FUY" secondAttribute="trailing" constant="50" id="pgZ-VR-Dcq"/>
-                            <constraint firstItem="g5E-i9-FUY" firstAttribute="top" secondItem="GyB-EP-w1d" secondAttribute="bottom" constant="70" id="zzM-Pb-qaw"/>
+                            <constraint firstItem="I3W-zB-4d2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SDK-Nj-wP3"/>
+                            <constraint firstItem="I3W-zB-4d2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fM1-mo-jBB"/>
                         </constraints>
                     </view>
                 </viewController>
