@@ -13,6 +13,7 @@
 		B71172AF29C4D7040057FB37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71172AD29C4D7040057FB37 /* Main.storyboard */; };
 		B71172B129C4D7050057FB37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71172B029C4D7050057FB37 /* Assets.xcassets */; };
 		B71172B429C4D7050057FB37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71172B229C4D7050057FB37 /* LaunchScreen.storyboard */; };
+		B71172BC29C4D81F0057FB37 /* MensagemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71172BB29C4D81F0057FB37 /* MensagemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B71172B029C4D7050057FB37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B71172B329C4D7050057FB37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B71172B529C4D7050057FB37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B71172BB29C4D81F0057FB37 /* MensagemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensagemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				B71172A729C4D7040057FB37 /* AppDelegate.swift */,
 				B71172A929C4D7040057FB37 /* SceneDelegate.swift */,
 				B71172AB29C4D7040057FB37 /* ViewController.swift */,
+				B71172BB29C4D81F0057FB37 /* MensagemViewController.swift */,
 				B71172AD29C4D7040057FB37 /* Main.storyboard */,
 				B71172B029C4D7050057FB37 /* Assets.xcassets */,
 				B71172B229C4D7050057FB37 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				B71172AC29C4D7040057FB37 /* ViewController.swift in Sources */,
 				B71172A829C4D7040057FB37 /* AppDelegate.swift in Sources */,
 				B71172AA29C4D7040057FB37 /* SceneDelegate.swift in Sources */,
+				B71172BC29C4D81F0057FB37 /* MensagemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
