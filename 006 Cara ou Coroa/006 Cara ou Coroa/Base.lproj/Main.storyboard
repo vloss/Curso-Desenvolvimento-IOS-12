@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u8I-OU-Fdf">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,96 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_06_Cara_ou_Coroa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cz3-xF-Ojc">
+                                <rect key="frame" x="16" y="203" width="361" height="154"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDL-ne-KOA">
+                                <rect key="frame" x="50" y="397" width="293" height="88"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="botao_jogar"/>
+                                <connections>
+                                    <segue destination="dqX-tw-pfW" kind="show" identifier="btPlay" id="7oj-35-Sti"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.47058826679999999" green="0.73333334920000004" blue="0.5647059083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cz3-xF-Ojc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Fu1-nJ-rxI"/>
+                            <constraint firstItem="cz3-xF-Ojc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="JCP-gv-N8K"/>
+                            <constraint firstItem="cz3-xF-Ojc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OI7-oA-WHT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RDL-ne-KOA" secondAttribute="trailing" constant="50" id="bhz-Rs-dRq"/>
+                            <constraint firstItem="RDL-ne-KOA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dxU-aR-cjB"/>
+                            <constraint firstItem="RDL-ne-KOA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="n2n-AS-4KA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cz3-xF-Ojc" secondAttribute="trailing" constant="16" id="qyv-mO-eTc"/>
+                            <constraint firstItem="RDL-ne-KOA" firstAttribute="top" secondItem="cz3-xF-Ojc" secondAttribute="bottom" constant="40" id="rta-NN-cco"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fcr-am-JV8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="983.96946564885491" y="-2.1126760563380285"/>
+        </scene>
+        <!--Resultado-->
+        <scene sceneID="ry1-9R-ver">
+            <objects>
+                <viewController id="dqX-tw-pfW" customClass="ResultViewController" customModule="_06_Cara_ou_Coroa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eW7-YG-Nhn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9bR-Nd-zUc">
+                                <rect key="frame" x="30" y="259.66666666666669" width="333" height="333.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9bR-Nd-zUc" secondAttribute="height" multiplier="6:6" id="QbP-Ch-KmX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FAu-B2-f9x"/>
+                        <color key="backgroundColor" red="0.47058826679999999" green="0.73333334920000004" blue="0.5647059083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="9bR-Nd-zUc" firstAttribute="centerY" secondItem="eW7-YG-Nhn" secondAttribute="centerY" id="4kW-rm-bxi"/>
+                            <constraint firstItem="9bR-Nd-zUc" firstAttribute="centerX" secondItem="eW7-YG-Nhn" secondAttribute="centerX" id="GhO-of-paz"/>
+                            <constraint firstItem="FAu-B2-f9x" firstAttribute="trailing" secondItem="9bR-Nd-zUc" secondAttribute="trailing" constant="30" id="inR-4t-3Om"/>
+                            <constraint firstItem="9bR-Nd-zUc" firstAttribute="leading" secondItem="FAu-B2-f9x" secondAttribute="leading" constant="30" id="o58-W2-14y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Resultado" id="2v0-sQ-11F"/>
+                    <connections>
+                        <outlet property="image" destination="9bR-Nd-zUc" id="RlD-0Y-gZM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ser-3t-71Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1779.3893129770991" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zt3-UC-dbF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u8I-OU-Fdf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sHW-xP-3bf">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dcL-Fq-0xd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rNw-kD-hZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="botao_jogar" width="271" height="74"/>
+        <image name="logo" width="321" height="154"/>
+    </resources>
 </document>
