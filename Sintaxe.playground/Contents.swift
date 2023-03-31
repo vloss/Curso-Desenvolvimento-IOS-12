@@ -16,7 +16,6 @@ lista.insert("Tomate")
 lista.insert("Tomate") // Não se repente os itens iguais
 print(lista)
 
-
 // Dicionarios
 var animais = [String: String]()
 animais["urso"] = "Animal Branco que hiberna"
@@ -29,3 +28,16 @@ var meses = [Int: String]()
 meses[1] = "Janeiro"
 meses[2] = "Fevereiro"
 print(meses[2]!)
+
+
+// Access Shared Defaults Object
+let userDefaults = UserDefaults.standard
+
+let dictionary = [
+    "A": "One",
+    "B": "Two",
+    "C": "Three"
+]
+
+userDefaults.set(dictionary, forKey: "myKey") // set
+let strings = userDefaults.object(forKey: "myKey") // get
